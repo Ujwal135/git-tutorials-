@@ -115,6 +115,20 @@ Untracked files:
 
 
 E:\git tutorials>git add .
+
 hear you see . add this means both changes is accepeted 
+you get to info about it 
+E:\git tutorials>git status
+On branch main
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   README.md
+        new file:   instructions.txt
+check the status is both are done 
+then 
+E:\git tutorials>git push origin main 
+
+you get 
 and after work done dont check to forget commit and cheking the status 
+
 ***thank you***
