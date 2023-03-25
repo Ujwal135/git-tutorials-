@@ -1,0 +1,120 @@
+Hear we learning the git tutorial from sratch
+ first of all after compatible software for system
+ install it
+then create new folder git-tutorial in any drive 
+ if you created folder in drive with name "git tutorial "
+  then copy the path of this perticular folder  
+  
+then open cmd prompt and then 
+ C:\Users\ujjwa>cd E:\git tutorials
+then open
+ C:\Users\ujjwa> E:
+
+ E:\git tutorials>
+you get this interface now 
+COPY THE 
+E:\git tutorials>echo "# git-tutorials-" >> README.md
+this will give you README.file
+
+then run
+ E:\git tutorials>git init
+this will give the further output
+Initialized empty Git repository in E:/git tutorials/.git/
+and created the hidden folder.git 
+
+so first of all you need to crate athutication which means 
+you basically have to crate youre user-name and user-email
+ for user- name and email the cammand is 
+   git config --global user.name "John Doe"
+   git config --global user.email johndoe@example.com
+why we do this 
+after the commiting code this will ask you for authantication that time youre email has varifying
+ok
+then you have to check the status of repo by this cammand 
+ E:\git tutorials>git status 
+you get to see no commits at ans untracked files .this means that file has not tracked by git yet okay
+then 
+ E:\git tutorials>git add README.md 
+ then you have to check status 
+  E:\git tutorials>git status 
+youll get 
+	E:\git tutorials>git status
+ On branch master
+
+ No commits yet
+
+ Changes to be committed:
+   (use "git rm --cached <file>..." to unstage)
+        new file:   README.md
+and youre file has tracked and commited.
+
+lets create our first commit 
+ E:\git tutorials>git commit -m "this is the first commit"
+and you get 
+  E:\git tutorials>git commit -m "this is the first commit"
+  [master (root-commit) 3c95a7a] this is the first commit
+   1 file changed, 1 insertion(+)
+   create mode 100644 README.md 
+ok
+whenever you creating the repo you have branch which are basicall master and main 
+E:\git tutorials>git branch
+* master
+
+E:\git tutorials>
+i rename that perticuler branch name master to main branch 
+hear an code for this 
+E:\git tutorials>git branch -M main
+which will change the name 
+E:\git tutorials>git branch
+* main
+the name has succesfully changed
+how i get know that my repo is linked with that main repo i have to create 
+for this info you have to copy that github repo url and peast it to by using this command 
+E:\git tutorials>git remote add origin https://github.com/Ujwal135/git-tutorials-.git
+it means you tell to git : this is the place you need to commit 
+for checking this add or not at our origin
+
+E:\git tutorials>git remote add origin https://github.com/Ujwal135/git-tutorials-.git
+
+E:\git tutorials>git remote -v
+origin  https://github.com/Ujwal135/git-tutorials-.git (fetch)
+origin  https://github.com/Ujwal135/git-tutorials-.git (push)
+yes its done 
+now simple stage is remains it is nothing but push this will
+push youre changes in repos and ask you for authauntication and youre repo is successfullu done 
+okk done till now 
+if i have to modify my README.md file i modify it and 
+the check status u seen 
+E:\git tutorials>git status
+On branch main
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+
+if you have to change you use "git add" or no changes you can "git restore"
+so i not restore fill i modified it (tell me in comments what i modified)
+
+lets add this instruction file in our repository first of i save this 
+you can add any file in repo by using this cmd  for eg i have created 
+this txt file instruction in my repo folder and brodcast it in my repo
+ok 
+so 
+E:\git tutorials>git status
+On branch main
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   README.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        instructions.txt
+
+
+E:\git tutorials>git add .
+hear you see . add this means both changes is accepeted 
+and after work done dont check to forget commit and cheking the status 
+***thank you***
